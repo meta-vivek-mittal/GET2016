@@ -1,0 +1,10 @@
+1.	Veg Food
+1.1	Shahi Paneer
+1.2	Malai Kofta
+2.	Non-Veg Food
+2.1	Mutten
+2.2	Kadai Chicken
+3.	Drinks
+3.1	Sprite
+3.2	Dew
+4.	Exit
