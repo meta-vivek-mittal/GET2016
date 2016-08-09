@@ -47,6 +47,12 @@ public class BinarySearchTree {
 		inOrder(root);
 	}
 
+	/**
+	 * Following function binarySearchTree() searches for the item.
+	 * @param root() denotes the root node of tree.
+	 * @param item(int) denotes the item to search.
+	 * @return the root node.
+	 */
 	public Node binarySearchTree(Node root, int item) {
 		if (root == null) {
 			Node newNode = new Node(item);
@@ -60,6 +66,9 @@ public class BinarySearchTree {
 		return root;
 	}
 
+	/**
+	 * Following function displays the sorted array.
+	 */
 	public void display() {
 		System.out.println();
 		for (int index = 0; index < numberOfElements; index++) {
@@ -67,6 +76,10 @@ public class BinarySearchTree {
 		}
 	}
 
+	/**
+	 * Following function stores the elements of binary search tree in inorder form
+	 * @param root
+	 */
 	public void inOrder(Node root) {
 		if (root == null)
 			return;
