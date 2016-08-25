@@ -1,0 +1,67 @@
+<HTML>
+	<HEAD>
+		<TITLE>
+			HTML ASSIGNMENT1
+		</TITLE>
+	</HEAD>
+	<BODY>
+		<TABLE>
+			<TR>
+				<TD width= 80% ><div align="left">
+					<img src="C:\Users\Anshu\Desktop\HTMLFILES\html5.png"  height= "140"/></div>
+				</TD>
+
+				<TD><div align="right">
+						<a href="Assignment1HomePage.html">Home</a>
+						<a href="Assignment1HomePage.html">About</a>
+						<a href="Assignment1HomePage.html">Products</a>
+						<a href="Assignment1HomePage.html">Gallery</a> 
+						<a href="Assignment1Contact.html">Contact</a></div>
+				</TD>
+			</TR>
+		</TABLE>
+		<HR></HR>
+		<BR></BR>
+		<center><img src="C:\Users\Anshu\Desktop\HTMLFILES\contact.jpg" height = "400"/></center>
+		<BR></BR>
+
+		<center><table style = "width = 80%">
+			<TR>
+				<TD><B>Name</B></TD>
+				<TD><INPUT TYPE  = "text" name = "Enter Name" /></TD>
+			</TR>
+			<TR>
+				<TD><B>E-Mail</B></TD>
+				<TD><INPUT TYPE  = "text" name = "Enter E-mail" /></TD>
+			</TR>
+			<TR>
+				<TD><B>City</B></TD>
+				<TD><SELECT>
+					<option>Jaipur</option>
+					<option>Kota</option>
+					<option>Jabalpur</option>
+					<option>Alwar</option></SELECT></TD>
+			</TR>
+			<TR>
+				<TD><B>Organisation Name</B></TD>
+				<TD><INPUT TYPE  = "text" name = "Enter Name" /></TD>
+			</TR>
+			<TR>
+				<TD><B>Contact Number</B></TD>
+				<TD><INPUT TYPE  = "text" name = "Enter Number" /></TD>
+			</TR>
+			<TR>
+				<TD><B>Message</B></TD>
+				<TD><textarea></textarea></TD>
+			</TR>
+			<TR>
+				<TD><input type="Submit" value="Submit"/></TD>
+			</TR>
+			</table>
+		</center>
+		<BR></BR>
+		<HR></HR>
+		<center><B>&copy Copyright 2016-2017 | All Rights Reserved | Metacube Training </B></center>
+		<br></br>
+	</BODY>
+</HTML>
