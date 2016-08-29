@@ -1,11 +1,19 @@
 @CHARSET "ISO-8859-1";
 
+@CHARSET "ISO-8859-1";
+
+#wrapper {
+	background-image: url("http://goo.gl/e8bK7O");
+}
+
 #container {
-	margin: 10px;
+	margin: 10px 10px 10px 10px;
+	background-color: white;
 }
 
 #header {
-	padding: 10px; position : relative;
+	padding: 10px;
+	position: relative;
 	text-align: center;
 	background: #afd1ed;
 	position: relative;
@@ -30,37 +38,40 @@
 	border-radius: 15px;
 }
 
-#leftNav {
-	background-colour: white;
-	width: 90%;
-	text-align: center;
-	border: 1px solid #cce6fc;
-	border-radius: 25px;
+#leftPart .boundary {
+	padding: 10px;
+	background-color: #ff8040;
+	border-radius: 10px;
+	margin: 10px;
+	text-align: justify;
 }
 
-#leftNav ul li.menuHead {
+#leftPart .boundary .menuHead {
 	font-weight: bold;
+	list-style: none;
 	background: #cce6fc;
 	text-align: center;
 	border-radius: 15px;
-	height: 25px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 10px;
+	font-size: 20px;
 }
 
-#leftNav .textBlock {
+#leftPart .boundary ul li {
+	list-style: none;
+}
+
+#leftPart .boundary .textBlock {
 	background-color: #cce6fc;
 	text-align: center;
 	border-radius: 15px;
 }
 
 #inner {
-	display: inline;
+	display: inline-block;
 	padding: 10px;
+	margin: 10px;
 	text-align: justify;;
-	width
-	=50%;
+	width: 50%;
+	float: left;
 }
 
 #inner .img {
@@ -68,24 +79,45 @@
 }
 
 #p {
-	text-decoration:40px;
+	text-decoration: 40px;
 	text-align: left;
 }
 
 #rightPart {
-	display: block;
+	display: inline-block;
 	float: left;
-	width: 25%%;
-	border-radius: 15px;
+	width: 25%; border-radius : 15px;
 	padding: 10px;
+	border-radius: 15px;
 }
 
-}
-#rightPart .rightNav {
+#rightPart .boundary {
 	padding: 10px;
-	background-color: #b1bec7;
+	background-color: #ff8040;
 	border-radius: 10px;
 	margin: 10px;
-text-align: justify;
+	text-align: justify;
 }
+
+#rightPart .boundary h3 {
+	background-color: #cce6fc;
+	text-align: center;
+	border-radius: 15px;
+}
+
+#rightPart .boundary ul li {
+	list-style: none;
+	background: #ff8040;
+	text-align: center;
+}
+
+#container .align {
+	text-align: center;
+	font-weight: bold;
+}
+
+#container .links ul li{
+	text-align: center;
+	font-weight: bold;
+	list-style: none;
 }
