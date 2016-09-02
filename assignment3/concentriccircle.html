@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ConcentricCircle</title>
+	</head>
+	
+	<body>
+		<canvas id="myCanvas"  width="500" height="500"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			
+			//draw circle with greater radius
+			ctx.fillStyle = "purple";
+			ctx.beginPath();
+			ctx.arc(200, 200, 100,  0, 2*Math.PI, true );
+			ctx.fill();
+			
+			//draw circle with smaller radius
+			ctx.fillStyle = "#fff";
+			ctx.beginPath();
+			ctx.arc(200, 200, 80,  0, 2*Math.PI, true );
+			ctx.fill();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Plus</title>
+	</head>
+	
+	<body>
+		<canvas id="myCanvas"  width="500" height="500"></canvas>
+		<script type="text/javascript">
+			
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			
+			//draw circle
+			ctx.fillStyle = "#ffba75";
+			ctx.beginPath();
+			ctx.arc(200, 200, 100, 0, 2*Math.PI, true);
+			ctx.fill();
+			
+			//draw rectangle one
+			ctx.fillStyle = "white";
+			ctx.beginPath();
+			ctx.fillRect(120, 180, 160, 40);
+			
+			//draw rectangle two
+			ctx.fillStyle = "white";
+			ctx.beginPath();
+			ctx.fillRect(180, 120, 40, 160);
+		</script>
+	</body>
+</html>

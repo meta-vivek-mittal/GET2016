@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SemiCircle</title>
+	</head>
+	
+	<body>
+		<canvas id="myCanvas"  width="500" height="500"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			
+			//draw semicircle on left side
+			ctx.fillStyle = "#3193D1";
+			ctx.beginPath();
+			ctx.arc(200, 200, 100, 0.5*Math.PI, 1.5*Math.PI, false);
+			ctx.fill();
+			
+			//draw circle with greater radius on right side
+			ctx.fillStyle = "#ccc";
+			ctx.beginPath();
+			ctx.arc(200, 200, 100,  0.5*Math.PI, 1.5*Math.PI, true );
+			ctx.fill();
+			
+			//draw circle with smaller radius on right side
+			ctx.fillStyle = "#fff";
+			ctx.beginPath();
+			ctx.arc(200, 200, 80,  0.5*Math.PI, 1.5*Math.PI, true );
+			ctx.fill();
+		</script>
+	</body>
+</html>
