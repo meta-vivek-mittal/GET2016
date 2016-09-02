@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Web Page</title>
+		<link rel="stylesheet" href="Asssignment1.css" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<header>Contact Us Today</header>
+		<section>	
+			<form>
+				<div class="divTable">
+					<div class="divTableBody">
+					
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>First Name</p></div>
+							<div class="divTableCell2">
+								<div class="image"><span class="fa fa-user"></span></div>
+								<div class="string"><input type="text" name="firstName" placeholder="First Name" class="textfield" pattern="[A-Za-z]{3,15}"required /></div>
+							</div>
+						</div>
+					
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>Last Name</p></div>
+							<div class="divTableCell2">
+								<div class="image"><span class="fa fa-user"></span></div>
+								<div class="string"><input type="text" name="lastName" placeholder="Last Name" pattern="[A-Za-z]{3,15}" required class="textfield"/></div>
+							</div>
+						</div>
+					
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>E-Mail</p></div>
+							<div class="divTableCell2">
+								<div class="image"><span class="fa fa-envelope"></span></div>
+								<div class="string"><input type="text" name="e-Mail" placeholder="E-Mail Address" pattern="[^ @]*@[^ @]*" required class="textfield"/></div>
+							</div>
+						</div>
+					
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>Phone #</p></div>
+							<div class="divTableCell2">
+								<div class="image"><span class="fa fa-phone"></span></div>
+								<div class="string"><input type="text" name="phone" placeholder="Phone No." pattern="[789][0-9]{9}" required class="textfield"/></div>
+							</div>
+						</div>
+					
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>Address</p></div>
+							<div class="divTableCell2">
+								<div class="image"><span class="fa fa-home"></span></div>
+								<div class="string"><input type="text" name="Address" placeholder="Address" pattern="[A-Za-z1-10]{10,100}" required class="textfield"/></div>
+							</div>
+						</div>
+					
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>City</p></div>
+							<div class="divTableCell2">
+								<div class="image"><span class="fa fa-home"></span></div>
+								<div class="string"><input type="text" name="City" placeholder="City" pattern="[A-Za-z]{5,20}" required class="textfield"/></div>
+							</div>
+						</div>
+				
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>State</p></div>
+							<div class="divTableCell2">
+								<div class="image"><span class="fa fa-list"></span></div>
+								<div class="string">
+									<SELECT type = "options" required class="textfield" id= "selecttext">
+							
+										<option>Please Select Your State</option>
+										<option>Rajasthan</option>
+										<option>Madhya Pradesh</option>
+										<option>Tamil Nadu</option>
+										<option>Jharkhand</option>
+									</SELECT>
+								</div>
+							</div>
+						</div>
+					
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>ZipCode</p></div>
+							<div class="divTableCell2">
+								<div class="image"><span class="fa fa-home"></span></div>
+								<div class="string"><input type="text" name="ZipCode" placeholder="ZipCode" pattern="[0-9]{6}" required class="textfield"></div>
+							</div>
+						</div>
+					
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>Website or Domain Name</p></div>
+							<div class="divTableCell2">
+								<div class="image"><span class="fa fa-globe"></span></div>
+								<div class="string"><input type="text" name="Website" placeholder="Website or Domain Name" pattern="[A-Za-z]{1,10}" required class="textfield"></div>
+							</div>
+						</div>
+						
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>Do You Have Hosting</p></div>
+							<div class="divTableCell2"><input type="radio" name="Hosting" value="Yes" checked/>Yes<br><input type="radio"name="Hosting" value="No"/>No</div>
+						</div>
+					
+						<div class="divTableRow">
+							<div class="divTableCell1"><p>Project Description</p></div>
+							<div class="divTableCell2">
+								<div class="imageOfDescription"><span class="fa fa-pencil"></span></div>
+								<textarea type="text" required></textarea>
+							</div>
+						</div>
+						
+						<div class="divTableRow">
+							<div class="divTableCell1"></div>
+							<div class="divTableCell2"><button type="submit">Send<span class="fa fa-paper-plane"></span></button></div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</section> 
+	</body>
+</html>
