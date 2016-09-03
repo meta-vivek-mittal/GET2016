@@ -1,0 +1,18 @@
+#div1, #div2 {
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid black;
+}
+body{
+	background-color:gray;
+	padding-top:3%;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
+p{
+	text-align:center;
+}
