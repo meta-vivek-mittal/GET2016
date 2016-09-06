@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <title> Dropdown List </title>
+	</head>
+	<body>
+        <script src="assignment3.js"> </script>
+        <input type="radio" name="Food" value="VEG" checked/>  Veg : 
+        <SELECT name = "veg-food" id="veg-food">
+               <option value="Malai Kofta">Malai Kofta</option>
+               <option value="Shahi Paneer">Shahi Paneer</option>
+               <option value="Dal Fry">Dal Fry</option>
+               <option value="Mushroom">Mushroom</option>
+        </SELECT>
+        <input type="radio" name="Food" value="NON-VEG"/>  Non-Veg : 
+        <SELECT name = "non-veg food" id="non-veg food">
+               <option value="Chicken Tikka">Chicken Tikka</option>
+               <option value="Mutton Tikka Masala">Mutton Tikka Masala</option>
+               <option value="Chicken Curry">Chicken Curry</option>
+               <option value="Tawa Chicken">Tawa Chicken</option>
+        </SELECT><br><br>
+        <input type="button" onclick="fetchChoices();" value="Submit"/>
+	</body>
+</html>
