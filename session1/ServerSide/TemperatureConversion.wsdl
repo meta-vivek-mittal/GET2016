@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://conversion" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://conversion" xmlns:intf="http://conversion" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://conversion" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="fahrenheitToCelsius">
+    <complexType>
+     <sequence>
+      <element name="fahrenheit" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="fahrenheitToCelsiusResponse">
+    <complexType>
+     <sequence>
+      <element name="fahrenheitToCelsiusReturn" type="xsd:double"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="fahrenheitToCelsiusRequest">
+
+      <wsdl:part element="impl:fahrenheitToCelsius" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="fahrenheitToCelsiusResponse">
+
+      <wsdl:part element="impl:fahrenheitToCelsiusResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="TemperatureConversion">
+
+      <wsdl:operation name="fahrenheitToCelsius">
+
+         <wsdl:input message="impl:fahrenheitToCelsiusRequest" name="fahrenheitToCelsiusRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:fahrenheitToCelsiusResponse" name="fahrenheitToCelsiusResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="TemperatureConversionSoapBinding" type="impl:TemperatureConversion">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="fahrenheitToCelsius">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="fahrenheitToCelsiusRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="fahrenheitToCelsiusResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="TemperatureConversionService">
+
+      <wsdl:port binding="impl:TemperatureConversionSoapBinding" name="TemperatureConversion">
+
+         <wsdlsoap:address location="http://localhost:8080/ServerSide/services/TemperatureConversion"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
